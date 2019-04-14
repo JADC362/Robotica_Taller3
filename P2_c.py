@@ -128,9 +128,7 @@ def callbackSimulationTime(msg):
 #Obtiene la posicion del robot en coordenadas polares rho, alpha, beta
 def obtenerPosicionPol(posCar,posicionDeseada):
 	global umbralSuperado, errorRho
-	#print("restax:{},restay:{},total:{}".format(posicionDeseada[0]-posCar[0],posicionDeseada[1]-posCar[1],np.sqrt((posicionDeseada[0]-posCar[0])**2+(posicionDeseada[1]-posCar[1])**2)))
 	rho = np.sqrt((posicionDeseada[0]-posCar[0])**2+(posicionDeseada[1]-posCar[1])**2)
-	#print("rho:{}".format(rho))
 	if rho <= errorRho:
 		umbralSuperado = True
 
@@ -346,7 +344,6 @@ def pathplaning():
 
 	if(grillaMapa[xf][yf]==1):
 		[xf,yf]=buscarPosicionMasCercana(xf,yf) 
-		print("x:{},y:{}".format(xf,yf))
 
 	xi=int(posicionInicialCar[0]/tamanoGrilla)
 	yi=int(posicionInicialCar[1]/tamanoGrilla)
@@ -408,7 +405,7 @@ def main():
 	#Suscripcion al topico de los obstaculos
 	rospy.Subscriber('obstaclesPosition',Float32MultiArray,callbackObstaclesPosition)
 
-	rate = rospy.Rate(20)
+	rate = 	rospy.Rate(20)
 	try:
 
 		while not rospy.is_shutdown():
@@ -427,7 +424,6 @@ def main():
 			#Mientras el nodo este activo, se realizara:
 			if callTime and callPos:
 				error = ((posicionDeseada[0]-posicionActualCar[0])**2+(posicionDeseada[1]-posicionActualCar[1])**2)**(0.5)
-				#print("Deseada:{}, Actual:{}".format(posicionDeseada,posicionActualCar))
 				if error<=errorMax:
 					posicionDeseada = CalcularPosicionDeseada()
 					
