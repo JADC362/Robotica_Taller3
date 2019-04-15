@@ -14,15 +14,15 @@ REQUERIMIENTOS DE SISTEMA
 	- ROS Kinetic
 	- Qt5 Development Libraries
 	- OpenGL
-	  - V-REP PRO EDU
+	- V-REP PRO EDU
 
 VERSION
 
 	- Rosdistro: kinetic
 	- Rosversion: 1.12.14
 	- taller3_12: 1.0.0
-	  - V-rep V: 3.6
-	  - Ros-Pacman: 0.0.1-0
+	- V-rep V: 3.6
+	- Ros-Pacman: 0.0.1-0
 	
 VERSION LIBRERIAS PYTHON
 
@@ -30,7 +30,7 @@ VERSION LIBRERIAS PYTHON
 	- pynput: 1.4
   	- numpy: 1.15.1
 	- matplotlib: 2.2.3
- 	 - networkX: 2.2
+ 	- networkX: 2.2
 	 
 LIBRERIAS PYTHON BASE
 	
