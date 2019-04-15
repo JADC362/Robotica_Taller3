@@ -64,14 +64,20 @@ PERMISOS
 		- chmod +x *.py 
 
 EJECUCIÓN
-
-	Lo primero es ejecutar el entorno de ros y luego ejecutar vrep en la escena dispuesta en este repositorio (Escena.ttt)
+	
+	2) Para el punto 2, lo primero es ejecutar el entorno de ros y luego ejecutar vrep en la escena dispuesta en este repositorio (resources/Punto2/Escena.ttt)
 	- Abrir una nueva terminal
 	- Correr: roscore
 	- Abrir una nueva terminal
-  	- Dirigirse al directorio de vrep y correr el programa como: ./vrep.sh
+  	- Dirigirse al directorio de vrep y correr el programa como: ./vrep.sh y disponer en el escena 
   	- Abrir una nueva terminal
+	- cd catkin_ws
 	- source devel/setup.bash
+	- Ejecutar los diferentes puntos:
+		1) rosrun taller3_12 P2_b.py
+		2) rosrun taller3_12 P2_c.py
+		3) rosrun taller3_12 P2_e.py [posicionFinalX] [posicionFinalY] [posicionFinalAngulo]
+		4) rosrun taller3_12 P2_g.py
 	
 CREADORES
 
