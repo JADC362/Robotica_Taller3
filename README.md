@@ -30,7 +30,8 @@ VERSION LIBRERIAS PYTHON
 	- pynput: 1.4
   	- numpy: 1.15.1
 	- matplotlib: 2.2.3
-  - networkX: 2.2
+ 	 - networkX: 2.2
+	 
 LIBRERIAS PYTHON BASE
 	
 	- time
