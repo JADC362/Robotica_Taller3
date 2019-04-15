@@ -395,7 +395,7 @@ def main():
 	if len(sys.argv) > 1:
 		posicionFinalCar = [float(sys.argv[1]),float(sys.argv[2]),float(sys.argv[3])]
 	#Iniciacion del nodo antes ROS
-	rospy.init_node('P2b_TopicosROS',anonymous=False)
+	rospy.init_node('P2c_nodoROS',anonymous=False)
 	pubMotorsVel = rospy.Publisher('motorsVel',Float32MultiArray,queue_size=10)
 
 	#Suscripcion al topico pioneerPosition
