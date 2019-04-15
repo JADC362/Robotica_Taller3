@@ -14,15 +14,15 @@ REQUERIMIENTOS DE SISTEMA
 	- ROS Kinetic
 	- Qt5 Development Libraries
 	- OpenGL
-  - V-REP PRO EDU
+	  - V-REP PRO EDU
 
 VERSION
 
 	- Rosdistro: kinetic
 	- Rosversion: 1.12.14
 	- taller3_12: 1.0.0
-  - V-rep V: 3.6
-  - Ros-Pacman: 0.0.1-0
+	  - V-rep V: 3.6
+	  - Ros-Pacman: 0.0.1-0
 	
 VERSION LIBRERIAS PYTHON
 
@@ -32,6 +32,7 @@ VERSION LIBRERIAS PYTHON
 	- matplotlib: 2.2.3
   - networkX: 2.2
 LIBRERIAS PYTHON BASE
+	
 	- time
 	- os
 	- sys
@@ -42,7 +43,7 @@ INSTALACIÓN
 
 	1) Instalar primero ROS, siguiendo el tutorial alojado en la pagina http://wiki.ros.org/kinetic/Installation/Ubuntu y crear un workspace
 	2) Descargar V-Rep Pro Edu de la pagina http://www.coppeliarobotics.com/downloads.html y alojar este en una carpeta como /Documentos
-  3) Descargar el paquete ros-pacman del siguiente repositorio https://github.com/carlosquinterop/ros-pacman al workspace.
+  	3) Descargar el paquete ros-pacman del siguiente repositorio https://github.com/carlosquinterop/ros-pacman al workspace.
 	4) Descargar el paquete taller3_12 del repositorio actual (https://github.com/JADC362/taller3_12) y almacenarlo en el workspace de ROS. 
 				
 COMPILACIÓN
@@ -54,12 +55,12 @@ PERMISOS
 
 	Cada código creado debe darsele la opción de ejecutarse. Para este se implementa el siguiente codigo:
 	- cd ~/catkin_ws/src/taller3_12/scripts/
-  - cd Punto1
-	- chmod +x *.py 
-  - cd ../Punto2
-	- chmod +x *.py 
-  - cd ../Punto3
-	- chmod +x *.py 
+	  - cd Punto1
+		- chmod +x *.py 
+	  - cd ../Punto2
+		- chmod +x *.py 
+	  - cd ../Punto3
+		- chmod +x *.py 
 
 EJECUCIÓN
 
