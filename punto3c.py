@@ -253,13 +253,16 @@ def callbackPioneerPosition(msg): #funcion encargada de obtener la posicion del 
 			robotAngle=(arctan+90)+90
 		else:
 			robotAngle=arctan	
+def funcion(x,ecuaciones):
 
+	f=(-ecuaciones[0]*80)*(x-1.5)+ecuaciones[1]
+	return f
 	
 def ventanaDialogo(): #funcion encargada de lanzar la ventana de dialogo donde se introduce la velocidad
 	global velocidad, xPuntos, yPuntos, grupos, xCentroides, yCentroides, xPuntosCumulate, yPuntosCumulate
 	k=2
 	raiz = Tk()
-	raiz.title("Entrada de velocidad")
+	raiz.title("Entrada de velocidad")	
 	raiz.resizable(1,1)
 
 	entrada=StringVar()
@@ -278,7 +281,7 @@ def ventanaDialogo(): #funcion encargada de lanzar la ventana de dialogo donde s
 
 	botonEnviar =  Button(frame1, text="enviar velocidad", command=lambda:recibir())
 	botonEnviar.grid(row=2, column=1)
-	botonKmeans = Button(frame1, text="hacer Kmeans", command=lambda:RansacV())
+	botonKmeans = Button(frame1, text="hacer Ransac", command=lambda:RansacV())
 	botonKmeans.grid(row=2, column=2)	
 	
 	def kmeansV():
@@ -293,6 +296,7 @@ def ventanaDialogo(): #funcion encargada de lanzar la ventana de dialogo donde s
 			yCentroides.append(centroides[i][1])
 			#print(xCentroides)
 		# print(yCentroides)
+		#print(funcion(1.4))
 	def RansacV():
 		ecuaciones= lineas()						
 	def recibir():
@@ -385,18 +389,17 @@ def main():
 
 
 	def graficar():
-		yecuaciones=[]
+		
 		j=0
 		while j<len(ecuaciones):			
-			
 			yecuaciones=[]
+			
 			for p in range(len(xecuaciones)):
-				yecuaciones.append((ecuaciones[j][0]*xecuaciones[p])+ecuaciones[1])
-				p+=1
-			print (len(xecuaciones), len(yecuaciones))	
+
+				yecuaciones.append(funcion(xecuaciones[p],ecuaciones[j]))
+			
 			ax1.scatter(xecuaciones, np.array(yecuaciones).tolist(), c='g', edgecolors='g')	
-			j+=1	
-		print(len(yecuaciones))	
+			j+=1		
 		
 		ax1.scatter(xPuntos, yPuntos, c='r', edgecolors='r')
 		#print(xCentroides)
