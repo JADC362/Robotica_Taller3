@@ -31,4 +31,4 @@ EJECUCION
  - Correr: roscore
  - Abrir terminal y ejecutar /vrep.sh en la carpeta de este archivo
  - Abrir terminal
- - Correr: rosrun taller3_12 P2_e.py
+ - Correr: rosrun taller3_12 P2_e.py [posicionFinalX] [posicionFinalY] [posicionFinalAngulo]
