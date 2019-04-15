@@ -56,12 +56,12 @@ PERMISOS
 
 	Cada código creado debe darsele la opción de ejecutarse. Para este se implementa el siguiente codigo:
 	- cd ~/catkin_ws/src/taller3_12/scripts/
-	  - cd Punto1
-		- chmod +x *.py 
-	  - cd ../Punto2
-		- chmod +x *.py 
-	  - cd ../Punto3
-		- chmod +x *.py 
+	- cd Punto1
+	- chmod +x *.py 
+	- cd ../Punto2
+	- chmod +x *.py 
+	- cd ../Punto3
+	- chmod +x *.py 
 
 EJECUCIÓN
 
