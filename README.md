@@ -70,8 +70,8 @@ EJECUCIÓN
 	- rosrun pacman pacman_world --c [opcion de mapa]. 
 	Para ejecutar este comando el usuario se debe encontrar en la carpeta catkin_ws y debe haber ejecutado previamente el comando source devel/setup.bash
 
-	Finalmente, una vez ejecutado y a la vista el mapa deseado, se ejecuta el código 
-	- rosrun taller3_12 T3_Punto1.py desde la terminal y se ejecuta el comando: python T3_Punto1.py
+	Finalmente, una vez ejecutado y a la vista el mapa deseado, se ejecuta el código desde la terminal:
+	- rosrun taller3_12 T3_Punto1.py 
 
 	Una vez realizada esta acción, verá como el pacman se mueve de manera automatica buscando el camino más corto entre galletas, mientras en la terminal se imprime el tiempo que le tomó al algoritmo encontrar el camino más corto entre cada galleta y el tiempo que le tomó a Pacman desplazarse a dicha galleta. 
 	
