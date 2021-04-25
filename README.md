@@ -1,4 +1,4 @@
-# taller3_12
+# Robótica_Taller3
 CONTEXTO
 
 Este es un repositorio creado a manera de contener la solución implementada a la tarea 3 del programa ROBÓTICA de la Universidad de los Andes. Esta se enfoca en la creación de un paquete de ROS que solucione 3 puntos diferentes. Estos 3 puntos se dirigen en la solución de retos respecto a la creación de un mapa, de un grafo y de las rutas más optimas a partir de diferentes métodos vistos en clase.
